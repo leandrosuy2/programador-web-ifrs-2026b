@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulário de contato acadêmico.">
+  <title>Contato | Leandro Dantas</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">Leandro Dantas</a>
+    <nav aria-label="Navegação principal"><ul>
+      <li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="contato.html" aria-current="page">Contato</a></li>
+    </ul></nav>
+  </header>
+  <main>
+    <h1>Contato</h1>
+    <p>Formulário demonstrativo: sem um servidor, os dados não são enviados.</p>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Seus dados</legend>
+        <p><label for="nome">Nome</label><br><input id="nome" name="nome" autocomplete="name" required maxlength="80"></p>
+        <p><label for="email">E-mail</label><br><input id="email" name="email" type="email" autocomplete="email" required></p>
+      </fieldset>
+      <fieldset>
+        <legend>Sobre a mensagem</legend>
+        <p><label for="assunto">Assunto</label><br>
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione uma opção</option><option value="projeto">Projeto</option><option value="estudo">Estudo</option><option value="outro">Outro</option>
+          </select>
+        </p>
+        <p><label for="mensagem">Mensagem</label><br><textarea id="mensagem" name="mensagem" rows="6" required maxlength="1000"></textarea></p>
+        <p><label><input type="checkbox" name="retorno" value="sim"> Quero receber uma resposta</label></p>
+      </fieldset>
+      <button type="submit">Preparar mensagem</button>
+    </form>
+  </main>
+  <footer><p>Portfólio acadêmico · IFRS 2026B</p></footer>
+</body>
+</html>

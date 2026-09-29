@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #203c35; background: #f1f3ed; --line: #cbd4cc; --accent: #bd5139; --dark: #17433b; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+header { padding: 3rem max(1rem, calc((100% - 900px) / 2)); background: #17433b; color: #fff; }
+header h1 { max-width: 12ch; margin: .4rem 0; font: 800 clamp(2.4rem, 6vw, 4rem) 'Manrope', sans-serif; }
+.eyebrow { color: #e9a58f; font-weight: 700; text-transform: uppercase; }
+main { max-width: 900px; margin: 0 auto; padding: 1rem; }
+section { padding: 2rem 0; border-bottom: 1px solid var(--line); }
+h2 { margin-top: 0; font: 700 1.5rem 'Manrope', sans-serif; }
+label { display: grid; gap: .4rem; font-weight: 600; }
+input, textarea { width: 100%; max-width: 100%; padding: .75rem; border: 1px solid #899b92; border-radius: 3px; background: #fff; color: inherit; font: inherit; }
+textarea { margin-top: .5rem; resize: vertical; }
+button { min-height: 44px; padding: .7rem 1rem; border: 0; border-radius: 3px; background: var(--dark); color: white; font: 700 .95rem 'DM Sans', sans-serif; cursor: pointer; }
+button:hover { background: var(--accent); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.form-row { display: flex; align-items: end; gap: .75rem; margin-top: .6rem; }
+.form-row > input { flex: 1; }
+.form-row > label { flex: 1; }
+.result { min-height: 1.5em; color: #415d53; }
+footer { padding: 1rem; background: #e1e7df; text-align: center; }
+@media (max-width: 560px) { .form-row { align-items: stretch; flex-direction: column; } .form-row > button { width: 100%; } }

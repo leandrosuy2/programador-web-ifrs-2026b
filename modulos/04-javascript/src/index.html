@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Exercícios de JavaScript com cálculos, eventos e transformação de texto.">
+  <title>Laboratório de JavaScript</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header><p class="eyebrow">Módulo 04 · IFRS</p><h1>Laboratório de JavaScript</h1><p>Calcule, valide e transforme dados diretamente no navegador.</p></header>
+  <main>
+    <section aria-labelledby="media-title">
+      <h2 id="media-title">Média de notas</h2>
+      <form id="average-form">
+        <label for="grades">Notas separadas por vírgula</label>
+        <div class="form-row"><input id="grades" name="grades" placeholder="7, 8.5, 9" required><button type="submit">Calcular média</button></div>
+      </form>
+      <p id="average-result" class="result" aria-live="polite">Informe ao menos uma nota entre 0 e 10.</p>
+    </section>
+    <section aria-labelledby="bmi-title">
+      <h2 id="bmi-title">Calculadora de IMC</h2>
+      <form id="bmi-form" class="form-row">
+        <label>Peso (kg)<input name="weight" type="number" min="1" max="500" step="0.1" required></label>
+        <label>Altura (m)<input name="height" type="number" min="0.5" max="2.5" step="0.01" required></label>
+        <button type="submit">Calcular IMC</button>
+      </form>
+      <p id="bmi-result" class="result" aria-live="polite">Preencha peso e altura.</p>
+    </section>
+    <section aria-labelledby="text-title">
+      <h2 id="text-title">Transformação de texto</h2>
+      <label for="source-text">Texto de entrada</label>
+      <textarea id="source-text" rows="4" placeholder="Digite ou cole um texto"></textarea>
+      <div class="form-row"><button type="button" id="uppercase-button">Converter para maiúsculas</button><button type="button" id="word-count-button">Contar palavras</button></div>
+      <p id="text-result" class="result" aria-live="polite">A saída aparece aqui.</p>
+    </section>
+    <section aria-labelledby="events-title">
+      <h2 id="events-title">Eventos e interação</h2>
+      <button type="button" id="confirm-button">Testar confirmação</button>
+      <button type="button" id="repeat-button">Contar até 5</button>
+      <p id="event-result" class="result" aria-live="polite">Clique em uma ação para ver o resultado.</p>
+      <label for="live-input">Evento de entrada<input id="live-input" type="text" placeholder="Digite para atualizar"></label>
+      <p id="input-result" class="result" aria-live="polite">O texto digitado será mostrado aqui.</p>
+      <button type="button" id="hover-target">Passe o ponteiro aqui</button>
+    </section>
+    <section aria-labelledby="library-title">
+      <h2 id="library-title">Estudo de biblioteca</h2>
+      <p>Chart.js facilita gráficos em canvas, com configuração e dependência externas. Para este laboratório, os resultados são textuais e não precisam de uma biblioteca; a solução nativa é menor e mais fácil de inspecionar.</p>
+    </section>
+  </main>
+  <footer><p>Os cálculos são exemplos educacionais e não substituem avaliação profissional.</p></footer>
+</body>
+</html>
